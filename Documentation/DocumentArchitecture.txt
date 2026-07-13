@@ -1,0 +1,435 @@
+# STMP Documentation Architecture Initialization
+
+You are working on the **Smart Traffic Management Platform (STMP)**.
+
+This project follows a **Documentation-First Development** methodology.
+
+Documentation is the single source of truth.
+
+No implementation should begin before documentation is approved.
+
+---
+
+# Project Philosophy
+
+STMP is an enterprise-grade intelligent traffic management platform designed for long-term scalability.
+
+The documentation must be written as if this project will eventually be maintained by multiple software engineers, AI assistants, researchers, and government organizations.
+
+The documentation should remain understandable for years.
+
+Every document must be:
+
+- professional
+- structured
+- modular
+- scalable
+- implementation-independent
+- easy for both humans and AI assistants to understand
+
+---
+
+# Documentation Principles
+
+Follow these principles everywhere.
+
+1. Documentation First
+2. Single Source of Truth
+3. Modular Documentation
+4. No Duplicate Information
+5. Cross Reference Related Documents
+6. Enterprise Documentation Style
+7. AI-Friendly Structure
+8. Human Readability
+9. Scalability
+10. Maintainability
+
+---
+
+# Repository Structure
+
+```
+STMP/
+│
+├── README.md
+├── ROADMAP.md
+├── CHANGELOG.md
+├── LICENSE
+│
+├── docs/
+│   │
+│   ├── 01_Business_Analysis/
+│   ├── 02_System_Analysis/
+│   ├── 03_Domain_Analysis/
+│   ├── 04_Architecture/
+│   ├── 05_Database/
+│   ├── 06_Backend/
+│   ├── 07_Frontend/
+│   ├── 08_AI/
+│   ├── 09_API/
+│   ├── 10_Deployment/
+│   ├── 11_Security/
+│   ├── 12_Testing/
+│   ├── 13_Development/
+│   ├── 14_Operations/
+│   └── 15_Future/
+│
+├── diagrams/
+│   ├── architecture/
+│   ├── database/
+│   ├── workflows/
+│   ├── deployment/
+│   └── ui/
+│
+├── adr/
+│   ├── ADR-001.md
+│   ├── ADR-002.md
+│   └── ...
+│
+├── glossary/
+│   └── Glossary.md
+│
+├── templates/
+│
+├── agents/
+│   └── AGENTS.md
+│
+└── assets/
+    ├── images/
+    └── icons/
+```
+
+---
+
+# Folder Responsibilities
+
+## docs/
+
+Contains all project documentation.
+
+Every folder represents one engineering phase.
+
+The numbering defines the recommended documentation order.
+
+Business Analysis
+
+↓
+
+System Analysis
+
+↓
+
+Domain Analysis
+
+↓
+
+Architecture
+
+↓
+
+Database
+
+↓
+
+Backend
+
+↓
+
+Frontend
+
+↓
+
+Artificial Intelligence
+
+↓
+
+API
+
+↓
+
+Deployment
+
+↓
+
+Security
+
+↓
+
+Testing
+
+↓
+
+Development
+
+↓
+
+Operations
+
+↓
+
+Future Improvements
+
+---
+
+## diagrams/
+
+Contains only diagrams.
+
+No markdown documents.
+
+Possible formats:
+
+- draw.io
+- Mermaid
+- PlantUML
+- PNG
+- SVG
+
+Architecture diagrams belong here.
+
+---
+
+## adr/
+
+Architecture Decision Records.
+
+Every major architectural decision must be documented here.
+
+Examples:
+
+ADR-001 Why PostgreSQL
+
+ADR-002 Why Modular Architecture
+
+ADR-003 Why FastAPI
+
+ADR-004 Why Leaflet
+
+ADR-005 Why YOLO
+
+ADR-006 Documentation First
+
+ADR files must never be modified without justification.
+
+---
+
+## glossary/
+
+Contains all project terminology.
+
+Every technical term should be defined only once.
+
+Other documents must reference the glossary instead of redefining terms.
+
+---
+
+## templates/
+
+Reusable documentation templates.
+
+Examples:
+
+Feature Template
+
+API Template
+
+Database Table Template
+
+Architecture Template
+
+Meeting Template
+
+Decision Template
+
+---
+
+## agents/
+
+Contains instructions for AI assistants.
+
+AGENTS.md is the primary instruction document for every AI coding assistant.
+
+Whenever project rules change, AGENTS.md must be updated first.
+
+---
+
+## assets/
+
+Contains static documentation assets.
+
+Images
+
+Icons
+
+Screenshots
+
+Illustrations
+
+---
+
+# Additional Rule
+
+Every documentation folder must contain a README.md.
+
+Example:
+
+docs/
+
+04_Architecture/
+
+README.md
+
+SYSTEM_ARCHITECTURE.md
+
+MODULE_ARCHITECTURE.md
+
+DEPLOYMENT_ARCHITECTURE.md
+
+SECURITY_ARCHITECTURE.md
+
+README.md acts as an index describing:
+
+- purpose
+- contained documents
+- relationships
+- navigation
+
+---
+
+# Documentation Rules
+
+Every document should contain appropriate sections when applicable.
+
+Purpose
+
+Scope
+
+Background
+
+Definitions
+
+Requirements
+
+Responsibilities
+
+Architecture
+
+Workflow
+
+Dependencies
+
+Related Documents
+
+Future Extensions
+
+References
+
+Not every document requires every section, but the structure should remain consistent.
+
+---
+
+# Writing Style
+
+Always use:
+
+Professional English
+
+Markdown
+
+Short paragraphs
+
+Clear headings
+
+Consistent terminology
+
+No duplicated information
+
+No implementation details unless the document specifically requires them.
+
+---
+
+# Cross Referencing
+
+Related documents must reference each other.
+
+Avoid duplicated explanations.
+
+One concept should be explained in one location only.
+
+---
+
+# Diagrams
+
+Whenever architecture becomes difficult to understand through text, propose creating diagrams.
+
+Prefer:
+
+Mermaid
+
+PlantUML
+
+draw.io
+
+Architecture diagrams should always have corresponding markdown documentation.
+
+---
+
+# Architecture Decision Records
+
+Every important decision must produce an ADR.
+
+Each ADR should include:
+
+Context
+
+Problem
+
+Decision
+
+Alternatives
+
+Consequences
+
+Status
+
+References
+
+ADR files are historical records.
+
+Do not rewrite history.
+
+---
+
+# AI Assistant Rules
+
+Never invent undocumented functionality.
+
+Never change project architecture without documentation.
+
+Never create undocumented APIs.
+
+Never rename folders without updating documentation.
+
+Always keep documentation synchronized.
+
+Always preserve consistency across documents.
+
+Documentation changes should happen before implementation changes.
+
+---
+
+# Long-Term Goal
+
+This documentation should eventually become a complete engineering knowledge base for the Smart Traffic Management Platform.
+
+A new developer or AI assistant should be able to understand the entire project only by reading the documentation.
+
+The documentation should remain scalable, maintainable, and enterprise-grade for many years.
+
+# Change Management
+
+The AI assistant must not create, rename, move, or delete documentation files or folders without explaining the reason.
+
+Before making structural changes, the assistant should evaluate whether the change improves maintainability, scalability, or clarity.
+
+Backward compatibility of documentation should be preserved whenever possible.
