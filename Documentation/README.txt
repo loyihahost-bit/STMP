@@ -1,5 +1,5 @@
 ================================================================================
-
+boshlanish shu yerda
 # Smart Traffic Management Platform (STMP)
 
 ## README.md — Part 1 of 5
